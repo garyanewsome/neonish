@@ -1,0 +1,21 @@
+{
+    "name": "neonish",
+    "displayName": "neonish",
+    "description": "neon on black color theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Neon(ish)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Neon(ish)-color-theme.json"
+            }
+        ]
+    }
+}
