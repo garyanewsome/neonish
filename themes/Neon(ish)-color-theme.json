@@ -127,7 +127,6 @@
     "editorOverviewRuler.commonContentForeground": "#7e57c2",
     "editorError.foreground": "#EF5350",
     "editorWarning.foreground": "#b39554",
-
     "editorGutter.modifiedBackground": "#e2b93d",
     "editorGutter.addedBackground": "#9CCC65",
     "editorGutter.deletedBackground": "#EF5350",
@@ -248,13 +247,14 @@
         "comment",
         "entity.name.type.instance.jsdoc",
         "entity.name.type.instance.phpdoc",
-        "markup.fenced_code.block.markdown",
+        "fenced_code.block.language",
         "meta.type.parameters.ts entity.name.type",
         "meta.type.parameters.tsx entity.name.type",
         "punctuation.definition.comment.dockerfile",
         "punctuation.definition.comment.js",
         "punctuation.definition.comment.ts",
-        "punctuation.definition.comment.tsx"
+        "punctuation.definition.comment.tsx",
+        "punctuation.definition.markdown"
       ],
       "settings": {
         "foreground": "#5F7E97",
@@ -270,6 +270,7 @@
         "invalid.deprecated",
         "invalid.broken",
         "keyword.operator.spread.js",
+        "markup.fenced_code.block.markdown",
         "meta.function-call.php punctuation",
         "meta.function punctuation.separator.comma",
         "meta.array",
@@ -305,7 +306,7 @@
         "variable.other.tsx",
         "variable.parameter.function.coffee",
         "variable.ts",
-        "variable.tsx"
+        "variable.tsx",
       ],
       "settings": {
         "foreground": "#FFFFFF"
@@ -317,6 +318,7 @@
         "constant.character.escape",
         "constant.other.color.rgb-value punctuation.definition.constant",
         "entity.name.class",
+        "entity.name.label.js",
         "markup.bold.markdown",
         "meta.attribute-selector.css entity.other.attribute-name.attribute",
         "meta.attribute-selector.sass entity.other.attribute-name.attribute",
@@ -480,6 +482,7 @@
       "name": "#FF77FF",
       "scope": [
         "constant.numeric",
+        "markup.inline.raw.string.markdown",
         "meta.structure.dictionary.value.json string.quoted.double",
         "punctuation.definition.constant",
         "string.other.link.description.markdown",
@@ -734,7 +737,6 @@
       "name": "#129F75",
       "scope": [
         "markup.inline.raw.markdown",
-        "markup.inline.raw.string.markdown",
         "variable.instance",
         "variable.other.instance",
         "variable.readwrite.instance"
@@ -803,7 +805,6 @@
       "name": "#CFFF00",
       "scope": [
         "bold",
-        "constant.other",
         "entity.name.tag.custom",
         "entity.name.type.js",
         "entity.name.type.module.js",
