@@ -222,7 +222,12 @@
   "tokenColors": [
     {
       "name": "Changed",
-      "scope": ["markup.changed", "meta.diff.header.git", "meta.diff.header.from-file", "meta.diff.header.to-file"],
+      "scope": [
+        "markup.changed",
+        "meta.diff.header.git",
+        "meta.diff.header.from-file",
+        "meta.diff.header.to-file"
+      ],
       "settings": {
         "foreground": "#A2BFFC",
         "fontStyle": "italic"
@@ -246,6 +251,7 @@
         "markup.fenced_code.block.markdown",
         "meta.type.parameters.ts entity.name.type",
         "meta.type.parameters.tsx entity.name.type",
+        "punctuation.definition.comment.dockerfile",
         "punctuation.definition.comment.js",
         "punctuation.definition.comment.ts",
         "punctuation.definition.comment.tsx"
@@ -417,7 +423,11 @@
     },
     {
       "name": "#F000FF",
-      "scope": ["variable.parameter.js", "variable.parameter.ts", "variable.parameter.tsx"],
+      "scope": [
+        "variable.parameter.js",
+        "variable.parameter.ts",
+        "variable.parameter.tsx"
+      ],
       "settings": {
         "foreground": "#F000FF",
         "fontStyle": "italic"
@@ -473,12 +483,13 @@
         "punctuation.definition.constant",
         "string.other.link.description.markdown",
         "string.other.link.title.markdown",
+        "string.quoted",
+        "string.template",
+        "source.dockerfile",
+        "support.type.object.module.js",
         "variable.other.object.property",
         "variable.other.meta.import.js",
         "variable.other.meta.export.js",
-        "support.type.object.module.js",
-        "string.quoted",
-        "string.template",
         "variable.parameter",
         "variable.parameter.function.ruby"
       ],
@@ -650,7 +661,13 @@
     },
     {
       "name": "#3DDBFF",
-      "scope": ["entity.name.tag", "entity.name.tag.js", "entity.name.tag.ts", "entity.name.tag.tsx", "meta.tag.html"],
+      "scope": [
+        "entity.name.tag",
+        "entity.name.tag.js",
+        "entity.name.tag.ts",
+        "entity.name.tag.tsx",
+        "meta.tag.html"
+      ],
       "settings": {
         "foreground": "#3DDBFF"
       }
@@ -817,7 +834,11 @@
     },
     {
       "name": "#CFFF00 Italic",
-      "scope": ["markup.inserted.diff", "variable.language.this.js", "variable.language.this.tsx"],
+      "scope": [
+        "markup.inserted.diff",
+        "variable.language.this.js",
+        "variable.language.this.tsx"
+      ],
       "settings": {
         "foreground": "#CFFF00",
         "fontStyle": "italic"
