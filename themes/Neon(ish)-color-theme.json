@@ -1,12 +1,13 @@
 {
   "name": "Neon(ish)",
   "type": "dark",
+  "semanticHighlighting": false,
   "colors": {
     "editor.background": "#000000",
     "editor.foreground": "#FFFFFF",
     "editorGroup.emptyBackground": "#000000",
     "editorGutter.background": "#000000",
-    "editor.lineHighlightBorder": "#2B154E",
+    "editor.lineHighlightBorder": "#001EFF",
     "editor.wordHighlightBackground": "#252bd89A",
     "editor.wordHighlightBorder": "#01FEF6",
     "editor.wordHighlightStrongBackground": "#001EFF",
@@ -15,6 +16,7 @@
     "editor.rangeHighlightBackground": "#2B154E",
     "editor.rangeHighlightBorder": "#BBBBBB",
     "editor.findMatchHighlightBorder": "#2B154E",
+    "editor.selectionHighlightBorder": "#FF3229",
     "sideBar.background": "#000000",
     "sideBar.border": "#6200FF70",
     "sideBar.foreground": "#FFFFFF",
@@ -27,7 +29,6 @@
     "activityBar.border": "#6200FF70",
     "activityBar.foreground": "#BBBBBB",
     "activityBar.inactiveForeground": "#37373D",
-    "activityBar.dropBackground": "#6200FF",
     "statusBar.background": "#000000",
     "statusBar.border": "#6200FF70",
     "activityBarBadge.background": "#6200FF",
@@ -57,24 +58,22 @@
     "titleBar.activeBackground": "#000000",
     "titleBar.activeForeground": "#FFFFFF",
     "titleBar.inactiveBackground": "#130130",
-
     "contrastActiveBorder": "#122d42",
     "contrastBorder": "#122d42",
     "focusBorder": "#122d42",
 
     // terminal icons and such
-    "foreground": "#3DDBFF",
 
-    "widget.shadow": "#011627",
-    "selection.background": "#4373c2",
-    "errorForeground": "#EF5350",
+    "widget.shadow": "#00000000",
+
+    "errorForeground": "#FF3229",
     "button.background": "#7e57c2cc",
     "button.foreground": "#ffffffcc",
     "button.hoverBackground": "#7e57c2",
     "dropdown.foreground": "#ffffffcc",
-    "input.background": "#0b253a",
-    "input.border": "#5F7E97",
-    "input.foreground": "#ffffffcc",
+    "input.background": "#000000",
+    "input.border": "#6200FF70",
+    "input.foreground": "#ffffff",
     "input.placeholderForeground": "#5F7E97",
     "inputOption.activeBorder": "#ffffffcc",
     "inputValidation.errorBackground": "#AB0300F2",
@@ -140,7 +139,7 @@
     "editorSuggestWidget.border": "#2B2F40",
     "editorSuggestWidget.foreground": "#d6deeb",
     "editorSuggestWidget.highlightForeground": "#ffffff",
-    "editorSuggestWidget.selectedBackground": "#5F7E97",
+    "editorSuggestWidget.selectedBackground": "#93975f",
     "editorHoverWidget.background": "#011627",
     "editorHoverWidget.border": "#5F7E97",
     "debugExceptionWidget.background": "#011627",
@@ -221,12 +220,7 @@
   "tokenColors": [
     {
       "name": "Changed",
-      "scope": [
-        "markup.changed",
-        "meta.diff.header.git",
-        "meta.diff.header.from-file",
-        "meta.diff.header.to-file"
-      ],
+      "scope": ["markup.changed", "meta.diff.header.git", "meta.diff.header.from-file", "meta.diff.header.to-file"],
       "settings": {
         "foreground": "#A2BFFC",
         "fontStyle": "italic"
@@ -250,10 +244,7 @@
         "fenced_code.block.language",
         "meta.type.parameters.ts entity.name.type",
         "meta.type.parameters.tsx entity.name.type",
-        "punctuation.definition.comment.dockerfile",
-        "punctuation.definition.comment.js",
-        "punctuation.definition.comment.ts",
-        "punctuation.definition.comment.tsx",
+        "punctuation.definition.comment",
         "punctuation.definition.markdown"
       ],
       "settings": {
@@ -291,7 +282,6 @@
         "punctuation.definition.list.begin",
         "punctuation.definition.list.end",
         "punctuation.definition.parameters",
-        "punctuation.definition.comment.php",
         "punctuation.python",
         "punctuation.section.array",
         "punctuation.separator.arguments",
@@ -300,13 +290,7 @@
         "raw",
         "source.go meta.function-call.go",
         "string.template punctuation.definition.string",
-        "terminator.js",
-        "variable.other.ruby",
-        "variable.other.ts",
-        "variable.other.tsx",
-        "variable.parameter.function.coffee",
-        "variable.ts",
-        "variable.tsx",
+        "terminator.js"
       ],
       "settings": {
         "foreground": "#FFFFFF"
@@ -343,18 +327,14 @@
       "name": "#FF3229",
       "scope": [
         "constant.language",
-        "constant.language.null",
-        "constant.language.boolean",
-        "constant.language.undefined.js",
+        "keyword.operator",
         "keyword.operator.assignment",
         "keyword.operator.class.php",
         "keyword.operator.comparison",
+        "keyword.operator.expression.delete.js",
         "keyword.operator.key.php",
         "keyword.operator.logical",
-        "keyword.operator.new.js",
-        "keyword.operator.new.ts",
-        "keyword.operator.new.tsx",
-        "keyword.operator.expression.delete.js",
+        "keyword.operator.new",
         "keyword.other.clone.php",
         "keyword.other.use.php",
         "meta.var.expr",
@@ -397,7 +377,6 @@
       "scope": [
         "meta.export.js variable.other",
         "meta.import.js variable.other",
-        "variable.other.php",
         "keyword.operator.ternary",
         "keyword.other.debugger.js",
         "keyword.other.debugger.ts",
@@ -411,13 +390,9 @@
         "variable.other.object.jsx",
         "variable.other.object.ts",
         "variable.other.object.tsx",
+        "variable.other.php",
+        "variable.other.readwrite",
         "variable.other.property",
-        "variable.other.readwrite.js",
-        "variable.other.readwrite.js.jsx",
-        "variable.other.readwrite.ts",
-        "variable.other.readwrite.tsx",
-        "variable.other.readwrite.alias.ts",
-        "variable.other.readwrite.alias.tsx",
         "support.type.property-name.css"
       ],
       "settings": {
@@ -426,17 +401,12 @@
     },
     {
       "name": "#F000FF",
-      "scope": [
-        "variable.parameter.js",
-        "variable.parameter.ts",
-        "variable.parameter.tsx"
-      ],
+      "scope": ["variable.parameter.js", "variable.parameter.ts", "variable.parameter.tsx"],
       "settings": {
         "foreground": "#F000FF",
         "fontStyle": "italic"
       }
     },
-
     {
       "name": "#C800FF",
       "scope": [
@@ -665,13 +635,7 @@
     },
     {
       "name": "#3DDBFF",
-      "scope": [
-        "entity.name.tag",
-        "entity.name.tag.js",
-        "entity.name.tag.ts",
-        "entity.name.tag.tsx",
-        "meta.tag.html"
-      ],
+      "scope": ["entity.name.tag", "entity.name.tag.js", "entity.name.tag.ts", "entity.name.tag.tsx", "meta.tag.html"],
       "settings": {
         "foreground": "#3DDBFF"
       }
@@ -836,11 +800,7 @@
     },
     {
       "name": "#CFFF00 Italic",
-      "scope": [
-        "markup.inserted.diff",
-        "variable.language.this.js",
-        "variable.language.this.tsx"
-      ],
+      "scope": ["markup.inserted.diff", "variable.language.this.js", "variable.language.this.tsx"],
       "settings": {
         "foreground": "#CFFF00",
         "fontStyle": "italic"
