@@ -214,8 +214,10 @@
     "gitDecoration.modifiedResourceForeground": "#a2bffc",
     "gitDecoration.deletedResourceForeground": "#EF535090",
     "gitDecoration.untrackedResourceForeground": "#addb67ff",
-    "gitDecoration.ignoredResourceForeground": "#5F7E97",
-    "gitDecoration.conflictingResourceForeground": "#ffeb95cc"
+    "gitDecoration.ignoredResourceForeground": "#8a9caa",
+    "gitDecoration.conflictingResourceForeground": "#ffeb95cc",
+
+    "gitlens.trailingLineForegroundColor": "#8a9caa",
   },
   "tokenColors": [
     {
@@ -248,7 +250,7 @@
         "punctuation.definition.markdown"
       ],
       "settings": {
-        "foreground": "#5F7E97",
+        "foreground": "#8a9caa",
         "fontStyle": "italic"
       }
     },
